@@ -20,7 +20,7 @@ greeting()
 
 
 
-x = 406
+x = 11
 
 def print_something():
     x = 13
