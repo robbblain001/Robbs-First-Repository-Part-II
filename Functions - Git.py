@@ -7,9 +7,7 @@ name = input("What is your name: ")
 def greeting():
     print("Hi " + name + "!")
 
-
 greeting()
-
 
 #4.13.4: Functions and Variables
 #Robb Blain
@@ -20,8 +18,6 @@ x = 11
 def print_something():
     x = 13
     print(x)
-
-
 
 print_something()
 
@@ -42,10 +38,8 @@ something()
 #Robb Blain
 #2.18.19
 
-
 def print_number(x):
     print(str(x))
-
 
 print_number(12)
 print("")
@@ -72,3 +66,18 @@ def print_2_numbers(x, y = 20):
 
 print_2_numbers(5, 67)
 print_2_numbers(23)
+
+#4.14.7 Print Multiple Times
+# Robb Blain
+#2.19.19
+
+def print_multiple_times(string, times):
+    for i in range(times):
+        print(string)
+
+print_multiple_times('Hello' , 9 )
+
+
+
+
+
