@@ -50,3 +50,25 @@ def print_number(x):
 print_number(12)
 print("")
 print_number('Hi')
+
+# 4.14.4: Name and Aje
+#Robb Blain
+#2.18.19
+
+def and_age(name, age):
+    print('hi, my name is ' , name , 'and I am ' , str(age) , ' years old.')
+
+and_age('Robb Blain', 14)
+print("")
+and_age('John', 89)
+
+#4.14.5 Default Parameter Values
+# Robb Blain
+# 2.19.19
+
+def print_2_numbers(x, y = 20):
+    print('First number: ' , str(x))
+    print('Second number: ' , str(y))
+
+print_2_numbers(5, 67)
+print_2_numbers(23)
