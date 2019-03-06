@@ -126,6 +126,25 @@ try:
 except ValueError:
     print('You must enter a float')
 
+# 4.16.6: Temperature Converter
+# Robb Blain
+# 2.20.19
+
+def c_to_f(c):
+    return c * 1.8 + 32
+
+def f_to_c(f):
+    return (f - 32) / 1.8
+
+try:
+    c = float(input('Enter a temperature in celsius: '))
+    print ('In fahrenheit the temperature is: ', round(c_to_f(c) , 2))
+
+    f = float(input('Enter a temperature in fahrenheit: '))
+    print('In Celsius the temperature is: ', round(f_to_c(f) , 2))
+
+except ValueError:
+    print('You must enter a float')
 
 
 
