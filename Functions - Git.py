@@ -77,6 +77,55 @@ def print_multiple_times(string, times):
 
 print_multiple_times('Hello' , 9 )
 
+# 4.16.3: Enter a number
+# Robb Blain
+# 2.20.19
+
+try:
+    my_number = int(input('Enter an interger: '))
+    print('Your number: ' + str(my_number))
+
+
+except ValueError:
+    print('That was not an interger')
+
+
+
+
+
+def retrieve_pos():
+    while True:
+        try:
+            number = int(input('Enter a positive number: '))
+            if number >= 0:
+                return number
+            else:
+                print('That was not a positive number')
+        except ValueError:
+            print('That was not a positive number')
+
+retrieve_pos()
+
+# 4.16.6: Temperature Converter
+# Robb Blain
+# 2.20.19
+
+def c_to_f(c):
+    return c * 1.8 + 32
+
+def f_to_c(f):
+    return (f - 32) / 1.8
+
+try:
+    c = float(input('Enter a temperature in celsius: '))
+    print ('In fahrenheit the temperature is: ', round(c_to_f(c) , 2))
+
+    f = float(input('Enter a temperature in fahrenheit: '))
+    print('In Celsius the temperature is: ', round(f_to_c(f) , 2))
+
+except ValueError:
+    print('You must enter a float')
+
 
 
 
